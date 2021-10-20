@@ -1,7 +1,7 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/im-parsa/csgo-bot)
 
 # Persian Discord API (PDA)
-> The Open Source Discord API built with discord.js [discordjs.guide](https://discordjs.guide)
+> The Open Source Discord API built with [discord.js](https://discordjs.guide) & as well as the use of Express, Typescript and EJS technologies
 
 <p align="left">
     <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/im-parsa/persian-discord-api">	
