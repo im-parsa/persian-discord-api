@@ -1,4 +1,4 @@
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/im-parsa/csgo-bot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/im-parsa/persian-discord-api)
 
 # Persian Discord API (PDA)
 > The Open Source Discord API built with [discord.js](https://discordjs.guide) & as well as the use of Express, Typescript and EJS technologies
