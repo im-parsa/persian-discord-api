@@ -2,11 +2,10 @@
 
 # Persian Discord API (PDA)
 > The Open Source Discord API built with discord.js [discordjs.guide](https://discordjs.guide)
-> 
-<p align="center">
+
+<p align="left">
     <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/im-parsa/persian-discord-api">	
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/im-parsa/persian-discord-api">
-    <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen"> 
 <p>
 
 ## 🔧 Requirements
