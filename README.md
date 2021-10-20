@@ -1,9 +1,15 @@
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-
+<p align="center">
+    [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/im-parsa/csgo-bot)
+<p>
 
 # Persian Discord API (PDA)
 > The Open Source Discord API built with discord.js [discordjs.guide](https://discordjs.guide)
-
+> 
+<p align="center">
+    <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/im-parsa/persian-discord-api">	
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/im-parsa/persian-discord-api">
+    <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen"> 
+<p>
 
 ## 🔧 Requirements
 1. Discord Bot Token Guide
