@@ -1,0 +1,85 @@
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+
+    <title>Persian Discord API &mdash; <%- userName %></title>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="language" content="EN" />
+    <meta name="Classification" content="API" />
+    <meta name="subject" content="<%- userName %> is now <%- userPresence %>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#516acc" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <meta name="twitter:card" value="summary" />
+    <meta name="twitter:title" content="Persian Discord API" />
+    <meta name="twitter:description" content="<%- userName %> is now <%- userPresence %>" />
+    <meta name="twitter:image" content="<%- user.user.displayAvatarURL({ dynamic: true,size: 1024 }) %>" />
+
+    <meta property="og:title" content="Persian Discord API" />
+    <meta property="og:description" content="<%- userName %> is now <%- userPresence %>" />
+    <meta property="og:image" content="<%- user.user.displayAvatarURL({ dynamic: true,size: 1024 }) %>" />
+
+
+    <meta name="description" content="<%- userName %> is now <%- userPresence %>" />
+    <meta name="keywords" content="Discord API, API, Discord, Persian Discord API, discord api, api, discord, persian discord api, pda, PDA" />
+    <meta name="author" content="Persian Discord API" />
+
+
+    <link rel="shortcut icon" type="image/png" href="https://persian-discord-api.herokuapp.com/image/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css'>
+    <link rel="stylesheet" href="/css/main.css">
+
+</head>
+<body>
+<div class="card animationFadeIn" data-state="#about">
+    <div class="card-header animationFadeIn">
+        <div class="card-cover animationFadeIn"></div>
+        <img class="card-avatar <%- userPresence %> animationFadeIn" src="<%- user.user.displayAvatarURL({ dynamic: true,size: 1024 }) %>" alt="avatar" />
+        <h3 class="card-fullName animationFadeIn"><%= userName %></h3>
+        <div class="card-badges animationFadeIn">
+            <% badgeHtml.forEach(function(flagElement) { %>
+                <%- flagElement %>
+            <% }) %>
+        </div>
+    </div>
+    <div class="card-main animationFadeIn">
+        <div class="card-section is-active animationFadeIn" id="about">
+            <%- presenceHtml %>
+            <div class="card-content animationFadeIn">
+                <div class="card-subtitle"><i class="bi bi-info-circle-fill"></i> Info</div>
+
+                <div class="card-desc">
+                    <h4 class="card-desc-b">Account creation date :</h4> <%- userAge %>
+                </div>
+
+                <div class="card-desc">
+                    <h4 class="card-desc-b">Account age from now :</h4> <%- userAgeFromNow %>
+                </div>
+
+                <div class="card-desc">
+                    <h4 class="card-desc-b">User ID :</h4> <%- userId %>
+                </div>
+
+                <div class="card-desc">
+                    <h4 class="card-desc-b">Nitro :</h4> <%- user.premiumSince ? "Yep" : "Nope" %>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-footer animationFadeIn">
+            <div class="content">
+                <p>Designed with <i style="color:var(--red)" class="fa fa-heart"></i> by <a class="parsa-a" href="https://parsa-firoozi.ir" target="_follow">im-parsa</a></p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<a class="view-json" href="?id=<%- userId %>&json=true" target="_blank"><i class="bi bi-file-text"></i></a>
+</body>
+</html>
