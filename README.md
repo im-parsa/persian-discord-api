@@ -9,7 +9,7 @@
 <p>
 
 ## 🔧 Requirements
-1. Discord Bot Token Guide
+1. 2 Discord Bot Token
 2. Node.js v14.0.0 or newer
 
 
