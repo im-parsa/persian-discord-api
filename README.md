@@ -1,2 +1,2 @@
-# random-pic-js-web
- 
+The Open Source Discord API
+
