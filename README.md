@@ -34,4 +34,4 @@ You should config .env file and make two keys **TOKEN0** & **TOKEN1** with what 
 
 ## 📝 Credits
 
-[@im-parsa](https://github.com/im-parsa) For the queue system used in this application which was adapted from [@im-parsa/persian-discord-api](https://github.com/im-parsa/persian-discord-api)
+[@im-parsa](https://github.com/im-parsa)
