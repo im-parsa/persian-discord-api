@@ -6,7 +6,7 @@ import { websiteRouter } from './routes/website.routing';
 import { get404 } from './controllers/error.controller';
 
 
-const allowedOrigins = ['http://localhost:3000', 'http://localhost:8080'];
+const allowedOrigins = ['*'];
 
 const options: cors.CorsOptions =
   {
@@ -53,7 +53,6 @@ app.use((req: any, res: Response, next: NextFunction) =>
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-  res.setHeader('Access-Control-Allow-Credentials', true);
 
   next();
 });
