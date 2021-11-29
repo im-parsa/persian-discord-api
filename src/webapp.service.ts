@@ -1,6 +1,7 @@
 import express, { Application, Response, NextFunction } from 'express';
 import rateLimit from 'express-rate-limit';
 import path from 'path';
+import cors from 'cors';
 import { websiteRouter } from './routes/website.routing';
 import { get404 } from './controllers/error.controller';
 
