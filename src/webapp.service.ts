@@ -46,9 +46,14 @@ app.use('/user', limiter);
 app.use(express.urlencoded({ extended: true, limit: '10kb' }));
 app.use(express.json({ limit: '10kb' }));
 
+
 app.use((req: any, res: Response, next: NextFunction) =>
 {
   req.requestTime = new Date().toISOString();
+
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
   next();
 });
