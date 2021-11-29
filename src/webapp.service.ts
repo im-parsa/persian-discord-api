@@ -4,6 +4,14 @@ import path from 'path';
 import { websiteRouter } from './routes/website.routing';
 import { get404 } from './controllers/error.controller';
 
+
+const allowedOrigins = ['http://localhost:3000'];
+
+const options: cors.CorsOptions =
+  {
+    origin: allowedOrigins
+  };
+
 const app: Application = express(),
   limiter = rateLimit(
     {
@@ -12,8 +20,11 @@ const app: Application = express(),
       message: 'You are in block list IPs'
     });
 
+
 app.set('view engine', 'ejs');
 app.set('views', (path.join(__dirname, '../views')));
+
+app.use(cors(options));
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
