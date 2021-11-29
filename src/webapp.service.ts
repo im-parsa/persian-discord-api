@@ -6,10 +6,19 @@ import { websiteRouter } from './routes/website.routing';
 import { get404 } from './controllers/error.controller';
 
 
-const allowedOrigins = ['http://localhost:3000'];
+const allowedOrigins = ['http://localhost:3000', 'http://localhost:8080'];
 
 const options: cors.CorsOptions =
   {
+    allowedHeaders: 
+      [
+        'Origin',
+        'X-Requested-With',
+        'Content-Type',
+        'Accept',
+        'X-Access-Token',
+      ],
+    methods: 'GET,HEAD,OPTIONS,PUT,PATCH,POST,DELETE',
     origin: allowedOrigins
   };
 
