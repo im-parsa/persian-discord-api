@@ -5,6 +5,23 @@ import cors from 'cors';
 import { websiteRouter } from './routes/website.routing';
 import { get404 } from './controllers/error.controller';
 
+
+const allowedOrigins = ['*'];
+
+const options: cors.CorsOptions =
+  {
+    allowedHeaders: 
+      [
+        'Origin',
+        'X-Requested-With',
+        'Content-Type',
+        'Accept',
+        'X-Access-Token',
+      ],
+    methods: 'GET,HEAD,OPTIONS,PUT,PATCH,POST,DELETE',
+    origin: allowedOrigins
+  };
+
 const app: Application = express(),
   limiter = rateLimit(
     {
